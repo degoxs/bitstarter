@@ -3,7 +3,7 @@ var app = express();
 var fs = require('fs');
 var outfile = "index.html";
 var out;
-fs.wirteFileSync(outfile,out);
+fs.writeFileSync(outfile,out);
 app.set('port', (process.env.PORT || 5000));
 app.use(express.static(__dirname + '/public'));
 
